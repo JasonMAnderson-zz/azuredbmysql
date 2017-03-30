@@ -2,7 +2,7 @@
    "parameters":{  
       "siteName":{  
          "type":"string",
-         "defaultValue":"janderszcj"
+         "defaultValue":"jandersbuild1"
       },
       "servicePlanName":{  
          "type":"string",
@@ -35,21 +35,21 @@
       },
       "serverName":{  
          "type":"string",
-	 "defaultValue":"janderszcj",
+	 "defaultValue":"jandersbuild1",
          "metadata":{  
             "description":"WordPress Database Host"
          }
       },
       "databaseName":{  
          "type":"string",
-	 "defaultValue":"zencovedb",
+	 "defaultValue":"wordpress",
          "metadata":{  
             "description":"WordPress Database Name"
          }
       },
       "administratorLogin":{  
          "type":"string",
-         "defaultValue":"zencove",
+         "defaultValue":"orcas",
          "metadata":{  
             "description":"WordPress Database Username"
          }
