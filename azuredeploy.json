@@ -2,11 +2,11 @@
    "parameters":{  
       "siteName":{  
          "type":"string",
-         "defaultValue":"azuredbmysql"
+         "defaultValue":"YourSite"
       },
       "servicePlanName":{  
          "type":"string",
-         "defaultValue":"Build2017"
+         "defaultValue":"YourServicePlan"
       },
       "location":{  
          "type":"string",
@@ -34,21 +34,21 @@
       },
       "serverName":{  
          "type":"string",
-	 "defaultValue":"azuredbmysql",
+	 "defaultValue":"YourDBName",
          "metadata":{  
             "description":"WordPress Database Host"
          }
       },
       "databaseName":{  
          "type":"string",
-	 "defaultValue":"wordpress",
+	 "defaultValue":"YourWordpressDatabaseName",
          "metadata":{  
             "description":"WordPress Database Name"
          }
       },
       "administratorLogin":{  
          "type":"string",
-         "defaultValue":"orcas",
+         "defaultValue":"YourUserName",
          "metadata":{  
             "description":"WordPress Database Username"
          }
@@ -70,7 +70,7 @@
          "type":"int",
          "allowedValues":[  
             50,
-            100
+            100,
          ],
          "defaultValue":50
       },
@@ -107,9 +107,10 @@
       "version":{  
          "type":"string",
          "allowedValues":[  
-            "5.6"
+            "5.6",
+	    "5.7"
          ],
-         "defaultValue":"5.6"
+         "defaultValue":"5.7"
       },
       "firewallRuleName":{  
          "type":"string",
