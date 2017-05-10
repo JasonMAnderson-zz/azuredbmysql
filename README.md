@@ -3,13 +3,14 @@ This template will deploy the following resources into your Azure subscription:
 
 ### Azure Web App for Linux (Preview)
 ### Wordpress 4.7.4 in a Docker container
-### Azure Database for MySQL
+### Azure Database for MySQL - Basic 50 Compute Unit SKU
 
 Your server will deployed with SSL Disabled as well as firewall rules being set to the full range of 0.0.0.0 - 255.255.255.255.  Feel free to change these afterwards if you'd like to add more security to your DB connection, however note that additional configuration will be necessary for your WordPress site to connect over SSL.
 
-If deploying through the **Deploy to Azure** button below, you will have the options to change most of the defaults fairly easily. If deploying through the Azure CLI, it's best that you first clone this repo and edit the **azuredeploy.json** file directly to change the key values to fit your environment.
+To deploy, make sure to edit the *parameters.json* file and update the fields in ALL CAPITALS specific to your deployment.  Once edited, save the file and run the following PowerShell command:
 
-To learn more about Azure Database for MySQL, check out our documentation and quick start tutorials [here.](https://docs.microsoft.com/en-us/azure/mysql/overview)
+```powershell
+New-AzureRmResourceGroupDeployment -Name <YOURSITENAME> -TemplateFile c:\<YOURPATH>\template.json -TemplateParameterFile c:\<YOURPATH>\parameters.json
+```
 
-# azuredbmysql
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+To learn more about Azure Database for MySQL, check out our documentation and quick start tutorials [here.](https://docs.microsoft.com/en-us/azure/mysql/overview)  For more information on deploying ARM templates for Azure Web Apps, check [here.](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-deploy)
