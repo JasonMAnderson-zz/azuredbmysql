@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "dockerRegistryImageName": {
+            "value": "appsvc/apps:wordpress"
+        },
+        "databaseName": {
+            "value": "wordpress"
+        },
+        "administratorLogin": {
+            "value": "mysqldbuser"
+        },
+        "administratorLoginPassword": {
+            "value": "YOURPASSWORD"
+        },
+        "mysqLocation": {
+            "value": "West US"
+        },
+        "serverName": {
+            "value": "YOURSERVERNAME"
+        },
+        "skuCapacityDTU": {
+            "value": 50
+        },
+        "skuFamily": {
+            "value": "SkuFamily"
+        },
+        "skuName": {
+            "value": "MYSQLB50"
+        },
+        "skuSizeMB": {
+            "value": 51200
+        },
+        "skuTier": {
+            "value": "Basic"
+        },
+        "version": {
+            "value": "5.6"
+        },
+        "collation": {
+            "value": "utf8_general_ci"
+        },
+        "charset": {
+            "value": "utf8"
+        },
+        "name": {
+            "value": "YOURSITENAME"
+        },
+        "hostingPlanName": {
+            "value": "YOURSERVICEPLANNAME"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "location": {
+            "value": "West US"
+        },
+        "serverFarmResourceGroup": {
+            "value": "YOURRESOURCEGROUP"
+        },
+        "subscriptionId": {
+            "value": "YOURSUBSCRIPTIONID"
+        }
+    }
+}
